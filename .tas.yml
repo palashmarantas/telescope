@@ -5,11 +5,11 @@ preRun:
         - npm ci
 preMerge:
   pattern:
-    - "./src/core/utils/markdown.test.js"
+    - "./src/core/utils/*.js"
 postMerge:
   pattern: 
-    - "./src/core/utils/markdown.test.js"
+    - "./src/core/utils/*.js"
 postRun:
      command:
         - node --version
-version: 1.2
+version: 1.0
